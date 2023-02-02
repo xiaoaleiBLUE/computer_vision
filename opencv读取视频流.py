@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 # opencv 读取摄像头视频流, 并显示
 # 保存视频流为 mp4文件
-cap = cv2.VideoCapture(0)                               # 0 默认摄像头
+cap = cv2.VideoCapture(0)                               # 0 调用设备默认摄像头
 
 # 视频格式: DIVX, x264
 # fps: 帧率,
