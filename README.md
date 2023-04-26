@@ -34,5 +34,23 @@
 # 五、口罩佩戴检测
 >- 1. 视频流中检测口罩是否佩戴正确
 
+# 九、Gan网络生成新的图片
+## 1.Gan 网路
+>- GAN 应用: 数据生成, 图像翻译, 超分辨率(更高清), 图像补全。
+>- Adversarial: 对抗对手的意思, 两个模型: Generator(生成模型)，Discriminator(判别模型, 分类模型)
+>- 创作者(G)目标: 赝品骗过鉴别者 鉴别者(D)目标: 火眼金睛不被骗
+## 2.Gan 网路架构
+>- Gan架构： Generator(生成模型)， Discriminator(判别模型, 分类模型), 以下简称 G网络，D网络。
+![image](https://user-images.githubusercontent.com/107736675/234520531-97c51219-8ba2-405d-b859-335ff31de73f.png)
+
+## 3.Gan 网路实现基本思路
+![image](https://user-images.githubusercontent.com/107736675/234520703-784971b6-5e6e-4aff-aadf-ff53d81bbd23.png)
+
+## 4.本项目中使用Gan网络架构
+![image](https://user-images.githubusercontent.com/107736675/234520947-26220dc5-d964-4d49-b577-b35712c156c8.png)
+
+## 5.生成结果
+![image](https://user-images.githubusercontent.com/107736675/234521153-cb9e52b1-9e88-424b-af11-9ad9617c1874.png)
 
 # 继续更新中
+
