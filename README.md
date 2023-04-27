@@ -58,12 +58,11 @@
 
 # 十二、实现RESNET 50网络
 ## 1.网络架构
-![image](https://user-images.githubusercontent.com/107736675/234800683-65cc6227-5611-4570-9d25-3ad2418ffa94.png)
-![image](https://user-images.githubusercontent.com/107736675/234800685-df6e05dc-2ab9-4124-ba7b-0010590635a9.png)
+![image](https://user-images.githubusercontent.com/107736675/234801699-68b067d8-64e5-47fc-be95-53b452b761df.png)
 
 ## 2.基本单元
-![image](https://user-images.githubusercontent.com/107736675/234801699-68b067d8-64e5-47fc-be95-53b452b761df.png)
-但是每层基本单元的通道数，卷积核步长(s)不一致,可以定义一个基本的残差单元,然后根据实际情况去修改通道数和卷积核步长(s)。
+![image](https://user-images.githubusercontent.com/107736675/234802146-c3ef8a07-871c-4fa1-95d0-143232596475.png)
+但是每层基本单元的通道数，卷积核步长(s)不一致,可以定义一个基本模块单元(并确定残差块是否要通过Conv运算),然后根据实际情况去修改通道数和卷积核步长(s)。
 
 # 继续更新中
 
