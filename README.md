@@ -65,7 +65,7 @@
 ![image](https://user-images.githubusercontent.com/107736675/234800685-df6e05dc-2ab9-4124-ba7b-0010590635a9.png)
 
 ## 2.基本单元
-![image](https://user-images.githubusercontent.com/107736675/234800866-7a921e97-47cb-4498-8869-b1ed7c6a67b6.png)
+![image](https://user-images.githubusercontent.com/107736675/234801699-68b067d8-64e5-47fc-be95-53b452b761df.png)
 但是每层基本单元的通道数，卷积核步长(s)不一致,可以定义一个基本的残差单元,然后根据实际情况去修改通道数和卷积核步长(s)。
 
 # 继续更新中
