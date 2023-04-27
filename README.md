@@ -52,5 +52,21 @@
 ## 5.生成结果
 ![image](https://user-images.githubusercontent.com/107736675/234521153-cb9e52b1-9e88-424b-af11-9ad9617c1874.png)
 
+# 十一、实现RESNET 18网络
+## 1.架构分析
+![image](https://user-images.githubusercontent.com/107736675/234800309-e0d860f3-b150-4a27-aa5c-d2d768ad7ff8.png)
+![image](https://user-images.githubusercontent.com/107736675/234800214-6a839b17-6d4a-45f7-92ee-a352a9eeb8b3.png)
+## 2.基本单元
+![image](https://user-images.githubusercontent.com/107736675/234800483-7e9b939f-62b4-4bfa-bc78-dc116d950363.png)
+
+# 十二、实现RESNET 50网络
+## 1.网络架构
+![image](https://user-images.githubusercontent.com/107736675/234800683-65cc6227-5611-4570-9d25-3ad2418ffa94.png)
+![image](https://user-images.githubusercontent.com/107736675/234800685-df6e05dc-2ab9-4124-ba7b-0010590635a9.png)
+
+## 2.基本单元
+![image](https://user-images.githubusercontent.com/107736675/234800866-7a921e97-47cb-4498-8869-b1ed7c6a67b6.png)
+但是每层基本单元的通道数，卷积核步长(s)不一致,可以定义一个基本的残差单元,然后根据实际情况去修改通道数和卷积核步长(s)。
+
 # 继续更新中
 
