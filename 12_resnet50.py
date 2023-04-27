@@ -112,7 +112,7 @@ summary(resblock, (256, 56, 56))
 
 class Resnet_50(nn.Module):
     """
-    搭建一个简单的残差网络: RESNET 18
+    搭建一个简单的残差网络: RESNET 50
     输入: 224*224*3
     输出: 1000类
     """
