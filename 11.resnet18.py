@@ -222,36 +222,4 @@ resnet = Resnet18(10).to(device)
 summary(resnet, (3, 224, 224))
 
 
-"""
-一般分类模型:
-input ----> model ----> output   ----> prediction 
- 
-facenet: 使用分类模型进行训练
-                                 ----> Embedding ----> 人脸识别
-input ----> model ----> output 
-                                 ----> prediction 
-Embedding: 人脸转为特征向量(长度为128) 
-Embedding 识别流程: 
-1. 计算每个图片的 embedding
-2. 计算待识别图片与人脸库的欧氏距离
-3. 设定计算阈值
-4. 选择低于阈值且最短距离的人脸
-
-对模型进行细化
-                                  ----> L2归一化 ----> Embedding ----> 人脸识别
-input ----> model ----> Prelogit 
-                                  ----> output ----> prediction  
-
-Inception_resnet_v1:                  
-拼接:(输入 112*112*24, H*W*C)
-                --Conv(3*3)--> 112*112*48
-输入 112*112*24                              --Concat--> 112*112*96
-                --Conv(5*5)--> 112*112*48
-
-Inception_resnet_v2(卷积替换):
-"""
-
-
-
-
 
