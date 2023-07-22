@@ -44,6 +44,15 @@
 >- 3. 测试一下 dataLoader 加载
 >- 4. 测试显示一些图片
 
+## 4.model_train.py
+训练模型,
+>- 1. 自定义函数数据集Dataset类, 默认为 train 文件夹下, 读取 train 文件下的数据, 如果为 test, 则读取 test 文件夹下的数据, 进行数据增强处理
+>- 2. 定义好的Dataset类, 使用 dataloader 加载数据, 并定义 train_dataloader, test_dataloader
+>- 3. 导入定义好的 Unet 网络模型
+>- 4. 自定义 dice loss 函数
+>  5. 开始训练， 记录测试集和训练的 loss, 并保存最好的模型
+
+
 
 
 
