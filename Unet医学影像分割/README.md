@@ -50,7 +50,7 @@
 >- 2. 定义好的Dataset类, 使用 dataloader 加载数据, 并定义 train_dataloader, test_dataloader
 >- 3. 导入定义好的 Unet 网络模型
 >- 4. 自定义 dice loss 函数
->  5. 开始训练， 记录测试集和训练的 loss, 并保存最好的模型
+>- 5. 开始训练， 记录测试集和训练的 loss, 并保存最好的模型
 
 
 
