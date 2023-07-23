@@ -10,6 +10,8 @@
 对Unet网络进行观察, 可发现有个卷积的基本模块, 都是通过2次基本的卷积，也就是下图中的红色方框（后面两个特征图的通道大小一致）
 ，所以只需要定义基本的卷积模块(只是输入输出的通道数目不一致)。在左侧不同基本卷积块（即下图红色方框内）之间经过一个下采样（池化）操作, 
 在左侧不同基本卷积块（即下图红色方框内）之间经过一个上采样（转置卷积）操作。
+自定义模型网络结构：部分
+![image](https://github.com/xiaoaleiBLUE/computer_vision/assets/107736675/440d48a3-a328-4cb1-b2d4-8822e75cc37a)
 
 # 二、最小卷积模块
 
@@ -21,6 +23,8 @@
 ## 1.3D_display.py
 对于医学影像图片进行3D查看
 3D 查看 MRI 图像
+![image](https://github.com/xiaoaleiBLUE/computer_vision/assets/107736675/5ad7a17e-dc7c-4a89-b066-b2444cd7c175)
+
 
 ## 2.img_preprocess.py
 具体步骤详细看一下代码，代码都有注释
@@ -32,6 +36,8 @@
 >- 4. 构造归一化, 标准化函数
 >- 5. 预处理所有文件, 保存为 npz 文件, 存在磁盘
 >- 6. 检查一下存储的 npz 文件是否合格
+处理后的文件夹如下图所示
+![image](https://github.com/xiaoaleiBLUE/computer_vision/assets/107736675/15229534-128d-432e-8bb8-373e23c56b38)
 
 ## 3.custom_dataset.py
 自定义数据集(dataset)代码构建
@@ -44,6 +50,7 @@
 >- 3. 测试一下 dataLoader 加载
 >- 4. 测试显示一些图片
 
+
 ## 4.model_train.py
 训练模型,
 >- 1. 自定义函数数据集Dataset类, 默认为 train 文件夹下, 读取 train 文件下的数据, 如果为 test, 则读取 test 文件夹下的数据, 进行数据增强处理
@@ -51,7 +58,8 @@
 >- 3. 导入定义好的 Unet 网络模型
 >- 4. 自定义 dice loss 函数
 >- 5. 开始训练， 记录测试集和训练的 loss, 并保存最好的模型
-
+最好的模型结构如下
+![image](https://github.com/xiaoaleiBLUE/computer_vision/assets/107736675/b7809a09-aaa4-4a34-af11-5f1185d8cf14)
 
 
 
