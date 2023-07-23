@@ -11,11 +11,12 @@
 ，所以只需要定义基本的卷积模块(只是输入输出的通道数目不一致)。在左侧不同基本卷积块（即下图红色方框内）之间经过一个下采样（池化）操作, 
 在左侧不同基本卷积块（即下图红色方框内）之间经过一个上采样（转置卷积）操作。
 自定义模型网络结构：部分
-![image](https://github.com/xiaoaleiBLUE/computer_vision/assets/107736675/440d48a3-a328-4cb1-b2d4-8822e75cc37a)
 
 # 二、最小卷积模块
 
 ![image](https://github.com/xiaoaleiBLUE/computer_vision/assets/107736675/c5d56d22-93f0-4292-a87a-fdbe942daf5b)
+
+![image](https://github.com/xiaoaleiBLUE/computer_vision/assets/107736675/440d48a3-a328-4cb1-b2d4-8822e75cc37a)
 
 
 # 三、网络结构代码实现
