@@ -162,32 +162,24 @@ closing, 闭合
 kernel = np.ones((15, 15), dtype=np.int8)
 closing_1 = cv2.morphologyEx(gray.copy(), cv2.MORPH_CLOSE, kernel)
 
+kernel = np.ones((20, 20), dtype=np.int8)
+closing_2 = cv2.morphologyEx(gray.copy(), cv2.MORPH_CLOSE, kernel)
 
+fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 8), sharex=True, sharey=True)
 
+ax1.axis('off')
+ax1.imshow(gray.copy(), cmap='gray')
+ax1.set_title('orginal image')
 
+ax2.axis('off')
+ax2.imshow(closing_1 , cmap='gray')
+ax2.set_title('15*15')
 
+ax3.axis('off')
+ax3.imshow(closing_2, cmap='gray')
+ax3.set_title('20*20')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+plt.show()
 
 
 
