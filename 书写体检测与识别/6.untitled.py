@@ -201,6 +201,16 @@ dump(cls, './models/poly.joblib')
 new_cls = load('./models/poly.joblib')
 
 
+"""
+利用加载的模型进行预测
+"""
+predicted_labels = new_cls.predict(x_test)
+acc_score = accuracy_score(y_test, predicted_labels)
+
+print(acc_score)
+
+
+
 
 
 
