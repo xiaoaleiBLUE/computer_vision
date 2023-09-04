@@ -196,7 +196,7 @@ dump(cls, './models/poly.joblib')
 
 
 """
-加载模型
+加载训练好的模型
 """
 new_cls = load('./models/poly.joblib')
 
@@ -210,7 +210,17 @@ acc_score = accuracy_score(y_test, predicted_labels)
 print(acc_score)
 
 
+"""
+利用混合矩阵
+"""
+cm = confusion_matrix(y_test, predicted_labels)
 
+df_cm = pd.DataFrame(cm, index=[i for i in ['Zhuan', 'Li', 'Cao', 'Xing', 'Kai']],
+                     columns=[i for i in ['Zhuan', 'Li', 'Cao', 'Xing', 'Kai']])
+
+
+plt.figure(figsize=(10, 7))
+sn.heatmap(df_cm, annot=True, cmap='Greens', fmt='d')
 
 
 
