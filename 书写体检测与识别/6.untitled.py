@@ -189,6 +189,16 @@ acc_score = accuracy_score(y_test, predicted_labels)
 print(acc_score)                                               # 0.6992
 
 
+"""
+保存训练好的模型
+"""
+dump(cls, './models/poly.joblib')
+
+
+"""
+加载模型
+"""
+new_cls = load('./models/poly.joblib')
 
 
 
